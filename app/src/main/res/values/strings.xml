@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SendMeal</string>
+    <string name="lblName">Nombre y Apellido</string>
+    <string name="radioBtnDebito">Débito</string>
+    <string name="radioBtnCredito">Credito</string>
+    <string name="lblMesVencimiento">01</string>
+    <string name="lblAnioVencimiento">2020</string>
+    <string name="btnRegistrar">Registrar</string>
 </resources>

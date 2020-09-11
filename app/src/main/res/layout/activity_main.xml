@@ -7,21 +7,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtNombreyApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nombre"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/txtContrasenia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -29,7 +26,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editTextRepetirPassword"
+        android:id="@+id/txtRepetirContrasenia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -37,7 +34,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,27 +54,27 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbtTarjetaDebito"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Débito" />
+            android:text="@string/radioBtnDebito" />
 
         <RadioButton
-            android:id="@+id/radio1"
+            android:id="@+id/rbtTarjetaCredito"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Credito" />
+            android:text="@string/radioBtnCredito" />
 
     </RadioGroup>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtNumeroTarjeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -92,7 +89,8 @@
             android:ems="10"
             android:hint="CVV"
             android:inputType="number" />
-    </RelativeLayout>
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView3"
@@ -100,22 +98,29 @@
         android:layout_height="wrap_content"
         android:text="Fecha de vencimiento" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
     <EditText
         android:id="@+id/editTextNumber4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:text="@string/lblMesVencimiento"/>
+
 
     <EditText
         android:id="@+id/editTextNumber5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
-
+        android:inputType="number"
+        android:text="@string/lblAnioVencimiento"/>
+    </LinearLayout>
     <EditText
-        android:id="@+id/editTextNumber6"
+        android:id="@+id/txtCbu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -123,7 +128,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/editTextNumber7"
+        android:id="@+id/txtCvv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -144,16 +149,16 @@
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbxTerminos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Acepto términos y condiciones" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar" />
+        android:text="@string/btnRegistrar" />
 
 
 </LinearLayout>
