@@ -15,6 +15,7 @@ public class Tarjeta {
         this.esCredito = esCredito;
     }
 
+    
     public String getNumero() {
         return numero;
     }
