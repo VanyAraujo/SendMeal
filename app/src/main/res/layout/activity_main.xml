@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/lblName"
         android:inputType="textPersonName"
         tools:ignore="Autofill" />
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Contraseña"
+        android:autofillHints="@string/txtContrasenia"
         android:inputType="textPassword" />
 
     <EditText
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Repetir Contraseña"
+        android:autofillHints="@string/txtRepetirContrasenia"
         android:inputType="textPassword" />
 
     <EditText
@@ -38,14 +38,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email"
+        android:autofillHints="@string/txtEmail"
         android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo de Tarjeta" />
+        android:text="@string/txtTipoTarjeta" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Numero de Tarjeta"
+        android:autofillHints="@string/txtNumTarjeta"
         android:inputType="number" />
 
 
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="CVV"
+            android:autofillHints="@string/txtCvv"
             android:inputType="number" />
     </LinearLayout>
 
@@ -96,7 +96,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fecha de vencimiento" />
+        android:text="@string/txtFechaVenc" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="CBU"
+        android:autofillHints="@string/txtCbu"
         android:inputType="number" />
 
     <EditText
@@ -132,7 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Alias"
+        android:autofillHints="@string/txtCbuAlias"
         android:inputType="number" />
 
 
@@ -140,8 +140,7 @@
         android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:text="Realiza carga inicial?" />
+        android:text="@string/txtRealizarCarga" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -152,7 +151,7 @@
         android:id="@+id/cbxTerminos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Acepto términos y condiciones" />
+        android:text="@string/txtTerminosYCond" />
 
     <Button
         android:id="@+id/btnRegistrar"

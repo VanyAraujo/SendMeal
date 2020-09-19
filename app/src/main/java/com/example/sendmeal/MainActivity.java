@@ -13,6 +13,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
@@ -27,9 +28,10 @@ public class MainActivity extends AppCompatActivity {
     public RadioButton rbtTarjetaCredito;
     public EditText txtCbu;
     public EditText txtNumeroTarjeta,txtCvv;
-   public Button btnRegistar;
-   public CheckBox cbxTermino;
-   public SeekBar seekBar;
+    public Button btnRegistar;
+    public CheckBox cbxTermino;
+    public SeekBar seekBar;
+    public Switch swtRealizarCarga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                rtdoSeekBar.setText(String.valueOf(new Integer(progress)));
+                rtdoSeekBar.setText(String.valueOf(Integer.valueOf(progress)));
             }
 
             @Override

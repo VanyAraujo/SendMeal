@@ -6,4 +6,15 @@
     <string name="lblMesVencimiento">01</string>
     <string name="lblAnioVencimiento">2020</string>
     <string name="btnRegistrar">Registrar</string>
+    <string name="txtContrasenia">Contraseña</string>
+    <string name="txtRepetirContrasenia">Repetir Contraseña</string>
+    <string name="txtRealizarCarga">Realiza carga inicial</string>
+    <string name="txtTerminosYCond">Acepto términos y condiciones</string>
+    <string name="txtCbuAlias">CBU Alias</string>
+    <string name="txtCbu">CBU</string>
+    <string name="txtFechaVenc">Fecha de Vencimiento</string>
+    <string name="txtCvv">CVV</string>
+    <string name="txtNumTarjeta">Numero de Tarjeta</string>
+    <string name="txtTipoTarjeta">Tipo de Tarjeta</string>
+    <string name="txtEmail">Email</string>
 </resources>
