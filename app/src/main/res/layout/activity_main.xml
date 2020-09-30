@@ -1,18 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <EditText
+        android:id="@+id/txtNombreyApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/lblName"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/txtContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtContrasenia"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtRepetirContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtRepetirContrasenia"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtEmail"
+        android:inputType="textEmailAddress" />
+
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTipoTarjeta" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_below"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtTarjetaDebito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioBtnDebito" />
+
+        <RadioButton
+            android:id="@+id/rbtTarjetaCredito"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioBtnCredito" />
+
+    </RadioGroup>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal" >
+    <EditText
+        android:id="@+id/txtNumeroTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtNumTarjeta"
+        android:inputType="number" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:autofillHints="@string/txtCvv"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtFechaVenc" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/lblMesVencimiento"/>
+
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/lblAnioVencimiento"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/txtCbu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtCbu"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtCvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:autofillHints="@string/txtCbuAlias"
+        android:inputType="number" />
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtRealizarCarga" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cbxTerminos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTerminosYCond" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRegistrar" />
+
+
+</LinearLayout>
